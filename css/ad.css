@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+.logo{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+main{
+	width: 1000px;
+	margin: 200px auto 30px auto;
+}
+.mtop{
+	width: 1000px;
+	margin-bottom: 20px;
+	border: solid 1px #181818;
+}
+.munder{
+	display: flex;
+}
+.munder img{
+	margin-left: 60%;
+	height: 395px;
+	border: solid 1px #181818;
+}
+h1:first-of-type{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 50px;
+    position: absolute;
+	top: 150px;
+	right: 150px;	
+}
+h1:last-of-type{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 50px;
+}
+.concept{
+	margin-top: 100px;
+	margin-bottom: 300px;
+}
+h2{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 50px;
+	margin-bottom: 10px;
+}
+p{
+	width: 600px;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.sunder{
+	margin-left: 100px;
+	display: flex;
+}
+.return{
+	font-size: 5em;
+	position: fixed;
+	bottom: 30px;
+    right: 30px;
+	display: none;
+}
