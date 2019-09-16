@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Works</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/works.css">
+	<link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+	<div class="menubtn"></div>
+	<div class="menuafter"></div>
+	<div class="menu">
+			<div class="menuleft">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			</div><!--left-->
+			<li class="works"><a href="works.html">Works</a></li>
+			<div class="menuright">
+			<li><a href="web.html">Web Design</a></li>
+			<li><a href="ad.html">Advertising</a></li>
+			<li><a href="package.html">Package</a></li>
+			<li><a href="others.html">Others</a></li>
+			</div><!--right-->
+	</div><!--menu-->
+	<main>
+		<div class="ad">
+			<div class="items-grid">
+				<div class="items">
+					<div class="items-img">
+						<img src="images/works1.jpg" alt="">
+					</div>
+					<div class="items-text">
+						<div class="items-text-wrapper">
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="adinner">
+				<p>Web<br>Design</p>
+				<a href="web.html" alt=""><img src="images/arrow.png"></a>
+			</div>
+		</div>
+		<div class="web">
+			<div class="webinner">
+				<p>Adver<br>tising</p>
+				<a href="ad.html" alt=""><img src="images/arrow.png"></a>
+			</div>
+			<div class="items-grid">
+				<div class="items"><img src="images/works2.jpg" alt=""></div>
+			</div>
+		</div>
+		<div class="package">
+			<div class="items-grid">
+				<div class="items"><img src="images/works3.jpg" alt=""></div>
+			</div>
+			<div class="packageinner">
+				<p>Package<br>Design</p>
+				<a href="package.html" alt=""><img src="images/arrow.png"></a>
+			</div>
+		</div>
+		<div class="others">
+			<p>Others</p>
+			<div class="items-grid">
+				<div class="items"><img src="images/works4.jpg" alt=""></div>
+			</div>
+			<div class="othersinner">
+				<a href="others.html" alt=""><img src="images/arrow.png"></a>
+			</div>
+		</div>
+	</main>
+	<div class="return"><i class="fas fa-caret-up"></i></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$('.menubtn').on({
+			'click':function(){
+				$('.menubtn').toggleClass('menubtnc');
+				$('.menu').toggleClass('menuafter');	
+			}
+	});
+		$('.return').on({
+    			'click':function(){
+        $('html,body').animate({scrollTop:0},700);
+    	}
+	});
+		$(window).scroll(function(){
+    	if($(this).scrollTop()>1){
+        $('.menu').fadeOut(700);
+		}else{
+			$('.menu').fadeIn(1);
+		}
+	});
+		$(window).scroll(function(){
+    	if($(this).scrollTop()>100){
+        $('.return').fadeIn(400);
+    	}else{
+        $('.return').fadeOut(400);
+    	}
+	});
+	</script>
+</body>
+</html>
