@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Profile</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/profile.css">
+	<link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+	<div class="menubtn"></div>
+	<div class="menuafter"></div>
+	<div class="menu">
+			<div class="menuleft">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			</div><!--left-->
+			<li class="works"><a href="works.html">Works</a></li>
+			<div class="menuright">
+			<li><a href="web.html">Web Design</a></li>
+			<li><a href="ad.html">Advertising</a></li>
+			<li><a href="package.html">Package</a></li>
+			<li><a href="others.html">Others</a></li>
+			</div><!--right-->
+	</div><!--menu-->
+	<main>
+	<div class="left">
+		<h1>自己紹介<br>profile</h1>
+		<p>趙禕 ZHAO YI<br><br>経歴<br><br>中国出身　女　1993.11生まれ　25歳<br>2016.6　鄭州大学工業工程科(中退)<br>2016.10 来日<br>2019.3　東京デザイン専門学校入学<br>日本語能力試験N1合格<br>TOEIC L＆R 585点取得<br>色彩検定2級合格</p>
+		<h2>使えるソフト</h2>
+		<div class="soft">
+			<ul>
+				<li><img src="images/ps.png" alt=""></li>
+				<li><img src="images/ai.png" alt=""></li>
+				<li><img src="images/dw.png" alt=""></li>
+				<li><img src="images/id.png" alt=""></li>
+				<li><img src="images/pr.png" alt=""></li>
+				<li><img src="images/ae.png" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<div class="right">
+		<img src="images/photo.jpg" alt="">
+		<p>趣味<br>＃音楽を聞くこと<br>好きなアーティスト：椎名林檎、aiko、宇多田ヒカル、きのこ帝国、back number<br>＃アニメ<br>＃ドラマ<br>＃ゲーム<br>＃撮影<br>＃旅行</p>
+	</div>
+	</main>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$('.menubtn').on({
+			'click':function(){
+				$('.menubtn').toggleClass('menubtnc');
+				$('.menu').toggleClass('menuafter');	
+			}
+		});
+		$(window).scroll(function(){
+    	if($(this).scrollTop()>1){
+        $('.menu').fadeOut(700);
+		}else{
+			$('.menu').fadeIn(1);
+		}
+	});
+	</script>
+</body>
+</html>
