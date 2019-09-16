@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Package</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/package.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+	<div class="menubtn"></div>
+	<div class="menuafter"></div>
+	<div class="menu">
+			<div class="menuleft">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			</div><!--left-->
+			<li class="works"><a href="works.html">Works</a></li>
+			<div class="menuright">
+			<li><a href="web.html">Web Design</a></li>
+			<li><a href="ad.html">Advertising</a></li>
+			<li><a href="package.html">Package</a></li>
+			<li><a href="others.html">Others</a></li>
+			</div><!--right-->
+	</div><!--menu-->
+	<main>
+		<h1>パッケージ</h1>
+		<div>
+			<img class="imgtop" src="images/package1.jpg" alt="">
+			<div class="imgunder">
+				<p>logo</p>
+				<img src="images/packagelogo.png" alt="">
+			</div>
+			<img src="images/package2.jpg" alt="">
+		</div>
+		<div class="concept">
+			<h2>Concept</h2>
+			<h3>オリジナルブランド</h3>
+			<p>SPRING<br>SPRINGは春と泉の意味があるので、生気と甘味のある商品を提供しているイメージを表す</p>
+			<h3>商品概要</h3>
+			<p>緑茶飲料<br>緑茶とりんご、オレンジ、レモンジュースの混和フルーツティーです<br>味はさっぱりな甘味がします。<br>定価　128円　　普通のコンビニとスーパーに販売</p>
+			<h3>ターゲット</h3>
+			<p>若い女性</p>
+			<h3>デザインコンセプト</h3>
+			<p>さっぱりする味が人にリフレッシュさせられるのことをイラストで伝わりたいです。イラストは女の子が緑茶と果物の海に泳いでる、緑茶とリフレッシュの感じに合うように、主に緑と青を使っています。シンプルなイラストで、おしゃれのように作りました。</p>
+		</div>
+	</main>
+		<div class="return"><i class="fas fa-caret-up"></i></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$('.menubtn').on({
+			'click':function(){
+				$('.menubtn').toggleClass('menubtnc');
+				$('.menu').toggleClass('menuafter');	
+			}
+	});
+		$('.return').on({
+    			'click':function(){
+        $('html,body').animate({scrollTop:0},700);
+    	}
+	});
+		$(window).scroll(function(){
+    	if($(this).scrollTop()>1){
+        $('.menu').fadeOut(700);
+		}else{
+			$('.menu').fadeIn(1);
+		}
+	});
+		$(window).scroll(function(){
+    	if($(this).scrollTop()>100){
+        $('.return').fadeIn(400);
+    	}else{
+        $('.return').fadeOut(400);
+    	}
+	});
+	</script>
+</body>
+</html>
