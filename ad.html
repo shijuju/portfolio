@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Advertising</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/ad.css">
+	<link rel="stylesheet" href="css/menu.css">	
+</head>
+
+<body>
+	<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+	<div class="menubtn"></div>
+	<div class="menuafter"></div>
+	<div class="menu">
+			<div class="menuleft">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			</div><!--left-->
+			<li class="works"><a href="works.html">Works</a></li>
+			<div class="menuright">
+			<li><a href="web.html">Web Design</a></li>
+			<li><a href="ad.html">Advertising</a></li>
+			<li><a href="package.html">Package</a></li>
+			<li><a href="#">Others</a></li>
+			<li><a href="#"></a></li>
+			</div><!--right-->
+	</div><!--menu-->
+	<main>
+		<h1>雑誌広告</h1>
+		<div>
+			<img class="mtop" src="images/ad1.jpg" alt="">
+			<div class="munder">
+				<p>クライアント情報<br>panasonic冷蔵庫NR-F605WPX<br>ターゲット<br>所得の高い30、40代料理に興味のある男性と主婦。</p>
+				<img src="images/ad3s.jpg" alt="">
+			</div>
+		</div>
+		<div class="concept">
+			<h2>Concept</h2>
+			<p>この冷蔵庫一番大きな特徴は業務用レベルの「はやうま冷凍*」採用し、おいしい7days7日間、新鮮でおいしい料理が楽しめるところです。
+			葉に露が付いてるレモン、ジャンプしている魚をそのまま凍らせ、新鮮さをアピールしたいと思います。インパクトを与えたいので、写真とロゴだけシンプルなビジュアルを作りました。</p>
+		</div>
+		<h1>Season広告</h1>
+		<p>クライアント<br>東京ソラマチ</p>
+		<div>
+			<img class="stop" src="images/ad7.jpg" alt="">
+			<div class="sunder">
+				<img src="images/ad4.jpg" alt="">
+				<div class="sunderright">
+					<img src="images/ad5.jpg" alt="">
+					<img src="images/ad6.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="concept">
+			<h2>Campain</h2>
+			<p>私自身はスカイツリーの近くに住んでるので、中国の友達をスカイツリーに誘う時、みんなスカイツリーが知らないて、東京タワーが知ってますので、まだまだスカイツリーの知名度は高くないと感じて、知名度をアップする企画にしたいと思いました。ふざけることは話題になりやすいと思って、ふざけると言えばやはりエイプリルフールが一番ふさわしいです。だから、この企画一番の狙いは話題になることです。話題になれば知名度が上がります、ソラマチの売り上げも上がると思います。キャンペーンは２部分に分けました。１目はスカイツリーのライティングショーは東京タワー代表的な赤と白を演じること２目は目ソラマチで3000円以上のお買い物をしたら、オリジナルデザインのポストカードとバックをプレゼントします。</p>
+			<h2>Concept</h2>
+			<p>ちょっとだけふざけてるだけど、本物に見えそうな雰囲気を出したいので、ポスターに実際のスカイツリーの写真を使って。スカイツリーのライティングを東京タワー代表的な赤と白に処理しました。タイトルのTREEを誰かが落書きして、勝手にOWNに変えたことで、ふざける感じを出したいと思います。フォントも手書きっぽい、エイプリルフールにあうフォントを選びました。なぜスカイツリーが東京タワーに見えそうになるんですか？実はちゃんと理由がある。その理由をポストカードのイラストで説明しようと思って、正体不明の黒い影がスカイツリーの形と色を変えた、全て彼らの仕業のイラストを書きました。</p>
+		</div>
+	</main>
+		<div class="return"><i class="fas fa-caret-up"></i></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$('.menubtn').on({
+			'click':function(){
+				$('.menubtn').toggleClass('menubtnc');
+				$('.menu').toggleClass('menuafter');	
+			}
+	});
+		$('.return').on({
+    			'click':function(){
+        $('html,body').animate({scrollTop:0},700);
+    	}
+	});
+		$(window).scroll(function(){
+    	if($(this).scrollTop()>1){
+        $('.menu').fadeOut(700);
+		}else{
+			$('.menu').fadeIn(1);
+		}
+	});
+		$(window).scroll(function(){
+    	if($(this).scrollTop()>100){
+        $('.return').fadeIn(400);
+    	}else{
+        $('.return').fadeOut(400);
+    	}
+	});
+	</script>
+</body>
+</html>
