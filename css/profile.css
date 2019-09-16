@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+	width: calc(100vw + 18px);
+	overflow: auto;
+}
+main{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+	display: flex;
+	position: relative;
+	font-family: 'Libre Baskerville', serif;
+}
+.logo{
+	width: 40px;
+	height: 30px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+.left{
+	width: 15%;
+	margin-left: 20%;
+}
+.soft ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul li img{
+	width: 40px;
+	height: 40px;
+}
+.right{
+	width: 20%;
+	margin-left: 70%;
+	position: absolute;
+}
+h1{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 50px;
+	margin-bottom: 30px;
+}
+h2{
+	font-family: 'Libre Baskerville', serif;
+	font-size:20px;
+	font-weight: 700;
+	line-height: 50px;
+	margin-bottom: 10px;
+}
+p{
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+.right img{
+	margin-bottom: 30px;
+}
