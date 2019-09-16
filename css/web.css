@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+.logo{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+main{
+	width: 1000px;
+	margin: 200px auto 30px auto;
+}
+.imgtop{
+	width: 900px;
+	margin: 0 auto 20px auto;
+}
+.imgunder{
+	width: 900px;
+	margin: 0 auto 20px auto;
+}
+h1{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 30px;	
+}
+.imgtop h1{
+	position: absolute;
+	top: 20%;
+	right: 20%;
+}
+.concept{
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+h2{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 50px;
+	margin-bottom: 10px;
+}
+.imgunder p{
+	margin-right: 100px;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.return{
+	font-size: 5em;
+	position: fixed;
+	bottom: 30px;
+    right: 30px;
+	display: none;
+}
