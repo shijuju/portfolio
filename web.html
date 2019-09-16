@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web Design</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/web.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+	<div class="menubtn"></div>
+	<div class="menuafter"></div>
+	<div class="menu">
+			<div class="menuleft">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			</div><!--left-->
+			<li class="works"><a href="works.html">Works</a></li>
+			<div class="menuright">
+			<li><a href="web.html">Web Design</a></li>
+			<li><a href="ad.html">Advertising</a></li>
+			<li><a href="package.html">Package</a></li>
+			<li><a href="others.html">Others</a></li>
+			</div><!--right-->
+	</div><!--menu-->
+	<main>
+		<div>
+			<div class="imgtop">
+				<h1>バナー</h1>
+				<img src="images/web1.jpg" alt="">
+			</div>
+			<div class="imgunder">
+				<h1>ナビゲーション</h1>
+				<img src="images/web2.jpg" alt="">
+			</div>
+		</div>
+		<div class="concept">
+			<h2>課題</h2>
+			<p>TDAグラフィックデザイン科WEB専攻を宣伝するバナーを作成<br>TDAのサイトの学科ナビゲーション部分をデザイン</p>
+		</div>
+	</main>
+		<div class="return"><i class="fas fa-caret-up"></i></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$('.menubtn').on({
+			'click':function(){
+				$('.menubtn').toggleClass('menubtnc');
+				$('.menu').toggleClass('menuafter');	
+			}
+	});
+		$('.return').on({
+    			'click':function(){
+        $('html,body').animate({scrollTop:0},700);
+    	}
+	});
+		$(window).scroll(function(){
+    	if($(this).scrollTop()>1){
+        $('.menu').fadeOut(700);
+		}else{
+			$('.menu').fadeIn(1);
+		}
+	});
+		$(window).scroll(function(){
+    	if($(this).scrollTop()>100){
+        $('.return').fadeIn(400);
+    	}else{
+        $('.return').fadeOut(400);
+    	}
+	});
+	</script>
+</body>
+</html>
